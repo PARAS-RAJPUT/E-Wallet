@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hushh Wallet reimagines personal data management through privacy-first preference cards that live in your Apple or Google Wallet.">
+    <title>Hushh Wallet — Privacy-First Preference Cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" role="banner">
+      <nav class="nav" aria-label="Primary">
+        <div class="container nav__row">
+          <div class="brand" aria-label="Hushh">
+            <span class="brand__logo" aria-hidden="true">🪪</span>
+            <span class="brand__name">Hushh</span>
+          </div>
+          <div class="nav__actions">
+            <button class="btn btn-text" data-theme-toggle aria-pressed="false" title="Toggle dark mode">Theme</button>
+            <a class="btn btn-primary" href="#" role="button">Get Started</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="main" role="main">
+      <section class="hero">
+        <div class="container hero__content">
+          <h1 class="hero__title">
+            Hushh Wallet: Privacy-First Preference Cards
+          </h1>
+          <p class="hero__lead">
+            Hushh Wallet reimagines personal data management through privacy-first preference cards that live in your Apple or Google Wallet. Each card contains your carefully curated preferences—from clothing sizes to dietary restrictions—shared on your terms with selective disclosure. The vision is simple: carry your personal context everywhere, control who sees what, and never repeat yourself again. Whether shopping for jeans, checking into a hotel, or attending an event, your preferences travel with you securely.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn-primary" href="#">Create Your Card</a>
+            <a class="btn btn-secondary" href="#">How it works</a>
+          </div>
+        </div>
+
+        <!-- Decorative wallet illustration (aria-hidden) -->
+        <div class="hero__art" aria-hidden="true">
+          <svg class="wallet-svg" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid meet">
+            <g fill="none" stroke="currentColor" stroke-width="16" opacity="0.12">
+              <rect x="200" y="170" rx="48" ry="48" width="800" height="420"></rect>
+              <rect x="240" y="210" rx="28" ry="28" width="720" height="340"></rect>
+              <circle cx="340" cy="380" r="58"></circle>
+              <circle cx="340" cy="380" r="24"></circle>
+              <path d="M560 540h300" stroke-linecap="round"></path>
+              <path d="M560 500h260" stroke-linecap="round" opacity="0.7"></path>
+              <path d="M560 460h220" stroke-linecap="round" opacity="0.5"></path>
+              <path d="M480 260h320" stroke-linecap="round"></path>
+              <path d="M480 300h280" stroke-linecap="round" opacity="0.7"></path>
+              <path d="M480 340h240" stroke-linecap="round" opacity="0.5"></path>
+              <rect x="820" y="360" rx="18" ry="18" width="120" height="80"></rect>
+              <path d="M120 610c220 0 220-120 440-120s220 120 440 120" stroke-linecap="round" opacity="0.25"></path>
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <section class="section problem">
+        <div class="container">
+          <h2 class="section__title">The Privacy Problem We're Solving</h2>
+          <div class="problem__grid">
+            <div class="problem__col">
+              <h3 class="eyebrow">Today's Reality</h3>
+              <ul class="bullet-list">
+                <li>Repeating sizes at every store visit</li>
+                <li>Forgetting dietary restrictions at restaurants</li>
+                <li>Sharing too much personal data unnecessarily</li>
+                <li>No control over who sees your information</li>
+                <li>Data scattered across platforms</li>
+              </ul>
+            </div>
+            <div class="problem__col">
+              <h3 class="eyebrow">Hushh's Approach</h3>
+              <ul class="bullet-list">
+                <li>Single source of truth in your wallet</li>
+                <li>Granular consent controls per interaction</li>
+                <li>Minimal disclosure by default</li>
+                <li>Full audit trail of data access</li>
+                <li>Standards-based verifiable credentials</li>
+              </ul>
+            </div>
+          </div>
+          <p class="note">
+            The Digital Personal Data Protection Act, 2023 mandates purpose-limited processing, explicit consent, and data subject rights. Hushh bakes these principles into the architecture from day one, ensuring compliance isn't an afterthought but a foundational feature that builds user trust.
+          </p>
+        </div>
+      </section>
+
+      <section class="section how">
+        <div class="container">
+          <h2 class="section__title">Core Architecture: How It Works</h2>
+          <ol class="steps">
+            <li class="step">
+              <div class="step__head">
+                <span class="step__num">01</span>
+                <span class="step__title">Create Your Cards</span>
+              </div>
+              <p class="step__body">Users build preference cards through intuitive forms, importing data from past purchases or verified sources like DigiLocker for identity verification.</p>
+            </li>
+            <li class="step">
+              <div class="step__head">
+                <span class="step__num">02</span>
+                <span class="step__title">Store in Wallet</span>
+              </div>
+              <p class="step__body">Cards become Apple .pkpass or Google Wallet passes with QR codes containing short-lived tokens, not raw personal data.</p>
+            </li>
+            <li class="step">
+              <div class="step__head">
+                <span class="step__num">03</span>
+                <span class="step__title">Scan & Consent</span>
+              </div>
+              <p class="step__body">When scanned, users see exactly what's requested and choose to share Basic, Standard, or Detailed levels—or deny entirely.</p>
+            </li>
+            <li class="step">
+              <div class="step__head">
+                <span class="step__num">04</span>
+                <span class="step__title">Selective Disclosure</span>
+              </div>
+              <p class="step__body">Only requested claims are revealed using W3C Verifiable Credentials and SD-JWT, keeping everything else private.</p>
+            </li>
+            <li class="step">
+              <div class="step__head">
+                <span class="step__num">05</span>
+                <span class="step__title">Audit & Revoke</span>
+              </div>
+              <p class="step__body">Full transparency log shows who saw what and when, with one-tap revocation that instantly disables access.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer__row">
+        <span>© <span id="year"></span> Hushh</span>
+        <nav aria-label="Footer">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
